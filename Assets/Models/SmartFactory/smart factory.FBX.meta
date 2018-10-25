@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: e9a0e07bb84fbd44ba923f7b6a6c5625
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: control panel 1
+    100002: control panel 2
+    100004: drying system 1
+    100006: drying system 2
+    100008: drying system 3
+    100010: Floor
+    100012: mixing system 1
+    100014: mixing system 2
+    100016: pipe extrusion line 1
+    100018: pipe extrusion line 1_MeshPart0
+    100020: pipe extrusion line 1_MeshPart1
+    100022: pipe extrusion line 2
+    100024: pipe extrusion line 2_MeshPart0
+    100026: pipe extrusion line 2_MeshPart1
+    100028: pipe extrusion line 3
+    100030: pipe extrusion line 3_MeshPart0
+    100032: pipe extrusion line 3_MeshPart1
+    100034: pipe extrusion line 4
+    100036: pipe extrusion line 4_MeshPart0
+    100038: pipe extrusion line 4_MeshPart1
+    100040: pipe extrusion line 5
+    100042: pipe extrusion line 5_MeshPart0
+    100044: pipe extrusion line 5_MeshPart1
+    100046: pipe extrusion line 6
+    100048: pipe extrusion line 6_MeshPart0
+    100050: pipe extrusion line 6_MeshPart1
+    100052: pipe extrusion line 7
+    100054: pipe extrusion line 7_MeshPart0
+    100056: pipe extrusion line 7_MeshPart1
+    100058: pipe extrusion line 8
+    100060: pipe extrusion line 8_MeshPart0
+    100062: pipe extrusion line 8_MeshPart1
+    100064: silo 1
+    100066: silo 1_MeshPart0
+    100068: silo 1_MeshPart1
+    100070: silo 2
+    100072: silo 2_MeshPart0
+    100074: silo 2_MeshPart1
+    100076: silo 3
+    100078: silo 3_MeshPart0
+    100080: silo 3_MeshPart1
+    100082: silo 4
+    100084: silo 4_MeshPart0
+    100086: silo 4_MeshPart1
+    100088: silo foundation
+    100090: //RootNode
+    100092: storage 1
+    100094: storage 2
+    100096: storage material tank 1
+    100098: storage material tank 2
+    100100: storage material tank 3
+    100102: storage material tank stair
+    100104: yellow line 1
+    100106: yellow line 2
+    100108: yellow line 3
+    100110: yellow line 4
+    400000: control panel 1
+    400002: control panel 2
+    400004: drying system 1
+    400006: drying system 2
+    400008: drying system 3
+    400010: Floor
+    400012: mixing system 1
+    400014: mixing system 2
+    400016: pipe extrusion line 1
+    400018: pipe extrusion line 1_MeshPart0
+    400020: pipe extrusion line 1_MeshPart1
+    400022: pipe extrusion line 2
+    400024: pipe extrusion line 2_MeshPart0
+    400026: pipe extrusion line 2_MeshPart1
+    400028: pipe extrusion line 3
+    400030: pipe extrusion line 3_MeshPart0
+    400032: pipe extrusion line 3_MeshPart1
+    400034: pipe extrusion line 4
+    400036: pipe extrusion line 4_MeshPart0
+    400038: pipe extrusion line 4_MeshPart1
+    400040: pipe extrusion line 5
+    400042: pipe extrusion line 5_MeshPart0
+    400044: pipe extrusion line 5_MeshPart1
+    400046: pipe extrusion line 6
+    400048: pipe extrusion line 6_MeshPart0
+    400050: pipe extrusion line 6_MeshPart1
+    400052: pipe extrusion line 7
+    400054: pipe extrusion line 7_MeshPart0
+    400056: pipe extrusion line 7_MeshPart1
+    400058: pipe extrusion line 8
+    400060: pipe extrusion line 8_MeshPart0
+    400062: pipe extrusion line 8_MeshPart1
+    400064: silo 1
+    400066: silo 1_MeshPart0
+    400068: silo 1_MeshPart1
+    400070: silo 2
+    400072: silo 2_MeshPart0
+    400074: silo 2_MeshPart1
+    400076: silo 3
+    400078: silo 3_MeshPart0
+    400080: silo 3_MeshPart1
+    400082: silo 4
+    400084: silo 4_MeshPart0
+    400086: silo 4_MeshPart1
+    400088: silo foundation
+    400090: //RootNode
+    400092: storage 1
+    400094: storage 2
+    400096: storage material tank 1
+    400098: storage material tank 2
+    400100: storage material tank 3
+    400102: storage material tank stair
+    400104: yellow line 1
+    400106: yellow line 2
+    400108: yellow line 3
+    400110: yellow line 4
+    2300000: control panel 1
+    2300002: control panel 2
+    2300004: drying system 1
+    2300006: drying system 2
+    2300008: drying system 3
+    2300010: Floor
+    2300012: mixing system 1
+    2300014: mixing system 2
+    2300016: pipe extrusion line 1_MeshPart0
+    2300018: pipe extrusion line 1_MeshPart1
+    2300020: pipe extrusion line 2_MeshPart0
+    2300022: pipe extrusion line 2_MeshPart1
+    2300024: pipe extrusion line 3_MeshPart0
+    2300026: pipe extrusion line 3_MeshPart1
+    2300028: pipe extrusion line 4_MeshPart0
+    2300030: pipe extrusion line 4_MeshPart1
+    2300032: pipe extrusion line 5_MeshPart0
+    2300034: pipe extrusion line 5_MeshPart1
+    2300036: pipe extrusion line 6_MeshPart0
+    2300038: pipe extrusion line 6_MeshPart1
+    2300040: pipe extrusion line 7_MeshPart0
+    2300042: pipe extrusion line 7_MeshPart1
+    2300044: pipe extrusion line 8_MeshPart0
+    2300046: pipe extrusion line 8_MeshPart1
+    2300048: silo 1_MeshPart0
+    2300050: silo 1_MeshPart1
+    2300052: silo 2_MeshPart0
+    2300054: silo 2_MeshPart1
+    2300056: silo 3_MeshPart0
+    2300058: silo 3_MeshPart1
+    2300060: silo 4_MeshPart0
+    2300062: silo 4_MeshPart1
+    2300064: silo foundation
+    2300066: //RootNode
+    2300068: storage 1
+    2300070: storage 2
+    2300072: storage material tank 1
+    2300074: storage material tank 2
+    2300076: storage material tank 3
+    2300078: storage material tank stair
+    2300080: yellow line 1
+    2300082: yellow line 2
+    2300084: yellow line 3
+    2300086: yellow line 4
+    3300000: control panel 1
+    3300002: control panel 2
+    3300004: drying system 1
+    3300006: drying system 2
+    3300008: drying system 3
+    3300010: Floor
+    3300012: mixing system 1
+    3300014: mixing system 2
+    3300016: pipe extrusion line 1_MeshPart0
+    3300018: pipe extrusion line 1_MeshPart1
+    3300020: pipe extrusion line 2_MeshPart0
+    3300022: pipe extrusion line 2_MeshPart1
+    3300024: pipe extrusion line 3_MeshPart0
+    3300026: pipe extrusion line 3_MeshPart1
+    3300028: pipe extrusion line 4_MeshPart0
+    3300030: pipe extrusion line 4_MeshPart1
+    3300032: pipe extrusion line 5_MeshPart0
+    3300034: pipe extrusion line 5_MeshPart1
+    3300036: pipe extrusion line 6_MeshPart0
+    3300038: pipe extrusion line 6_MeshPart1
+    3300040: pipe extrusion line 7_MeshPart0
+    3300042: pipe extrusion line 7_MeshPart1
+    3300044: pipe extrusion line 8_MeshPart0
+    3300046: pipe extrusion line 8_MeshPart1
+    3300048: silo 1_MeshPart0
+    3300050: silo 1_MeshPart1
+    3300052: silo 2_MeshPart0
+    3300054: silo 2_MeshPart1
+    3300056: silo 3_MeshPart0
+    3300058: silo 3_MeshPart1
+    3300060: silo 4_MeshPart0
+    3300062: silo 4_MeshPart1
+    3300064: silo foundation
+    3300066: //RootNode
+    3300068: storage 1
+    3300070: storage 2
+    3300072: storage material tank 1
+    3300074: storage material tank 2
+    3300076: storage material tank 3
+    3300078: storage material tank stair
+    3300080: yellow line 1
+    3300082: yellow line 2
+    3300084: yellow line 3
+    3300086: yellow line 4
+    4300000: box 1
+    4300002: mixing system 1
+    4300004: drying system 1
+    4300006: drying system 2
+    4300008: pipe extrusion line 8_MeshPart0
+    4300010: pipe extrusion line 8_MeshPart1
+    4300012: pipe extrusion line 7_MeshPart0
+    4300014: pipe extrusion line 7_MeshPart1
+    4300016: pipe extrusion line 6_MeshPart0
+    4300018: pipe extrusion line 6_MeshPart1
+    4300020: pipe extrusion line 5_MeshPart0
+    4300022: pipe extrusion line 5_MeshPart1
+    4300024: pipe extrusion line 4_MeshPart0
+    4300026: pipe extrusion line 4_MeshPart1
+    4300028: pipe extrusion line 3_MeshPart0
+    4300030: pipe extrusion line 3_MeshPart1
+    4300032: pipe extrusion line 2_MeshPart0
+    4300034: pipe extrusion line 2_MeshPart1
+    4300036: pipe extrusion line 1_MeshPart0
+    4300038: pipe extrusion line 1_MeshPart1
+    4300040: yellow line 1
+    4300042: silo 1_MeshPart0
+    4300044: silo 1_MeshPart1
+    4300046: silo 2_MeshPart0
+    4300048: silo 2_MeshPart1
+    4300050: silo 3_MeshPart0
+    4300052: silo 3_MeshPart1
+    4300054: Floor
+    4300056: yellow line 2
+    4300058: yellow line 3
+    4300060: mixing system 2
+    4300062: silo foundation
+    4300064: silo 4_MeshPart0
+    4300066: silo 4_MeshPart1
+    4300068: drying system 3
+    4300070: yellow line 4
+    4300072: storage material tank stair
+    4300074: storage material tank 1
+    4300076: storage material tank 2
+    4300078: storage 1
+    4300080: storage 2
+    4300082: control panel 1
+    4300084: control panel 2
+    4300086: storage material tank 3
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Default
+    second: {fileID: 2100000, guid: c21615e1564b2934d99afe2542f9a98d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Default
+    second: {fileID: 2100000, guid: e8a9897b04f1ef84486b3cd787410e28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Default
+    second: {fileID: 2100000, guid: 31b61a5b6ed8fa5479969c2f47ca824c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C1
+    second: {fileID: 2100000, guid: c2ab7d67003f5eb4ba1a0722ce079618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C10
+    second: {fileID: 2100000, guid: aba73cb789d77584eb39954e346c3535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C11
+    second: {fileID: 2100000, guid: 47d4ea823ad9dc6469a892d579151018, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C12
+    second: {fileID: 2100000, guid: 17c483187966c054fba2f9fe1f5a16a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C13
+    second: {fileID: 2100000, guid: d9d907f3957dd8c45b49b417d1676b1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C2
+    second: {fileID: 2100000, guid: f2ee28f8d47850448933616fc8533e7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C3
+    second: {fileID: 2100000, guid: 4e109886d40ab6c45844c83ee87b4981, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C4
+    second: {fileID: 2100000, guid: 4f3d38b805afedb43989fba754275989, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C5
+    second: {fileID: 2100000, guid: b5a4257d135a2a649895e1353d7bc66a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C6
+    second: {fileID: 2100000, guid: def9097133a628b458e38b55a7fb2458, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C7
+    second: {fileID: 2100000, guid: 6de57afa353e50e4dbf11212ebb95bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C8
+    second: {fileID: 2100000, guid: 8f986a81fc4cd7d4b912dce147dff472, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C9
+    second: {fileID: 2100000, guid: f7920d9451428ca4cbf01829dba12ec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #431'
+    second: {fileID: 2100000, guid: d7f01757b0cf45c489b994ff8b2463e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #627'
+    second: {fileID: 2100000, guid: 9c158dc7eae75d445926af5c76bd45c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #650'
+    second: {fileID: 2100000, guid: d03ee00ec93db524db506d96e60e597e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 178b046e3ccf123408b3860322f42fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 11ae8a516d052024baf5f30f36121d8a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
