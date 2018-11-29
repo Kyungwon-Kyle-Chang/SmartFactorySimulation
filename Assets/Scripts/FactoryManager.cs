@@ -7,6 +7,7 @@ using UnityEngine;
 public class FactoryManager : MonoBehaviour
 {
     public GameObject ppVolume;
+    public InfoPanel infoPanel;
 
     private int _currentLine = 1;
     private int _currentMachine = 1;
@@ -21,7 +22,7 @@ public class FactoryManager : MonoBehaviour
         _lineDict = new Dictionary<int, GameObject>();
 
         var alarmControllers = GetComponentsInChildren<AlarmController>();
-        for(int i=0; i<alarmControllers.Length; i++)
+        for (int i = 0; i < alarmControllers.Length; i++)
         {
             _lineDict.Add(alarmControllers[i].lineNum, alarmControllers[i].gameObject);
         }
@@ -66,13 +67,13 @@ public class FactoryManager : MonoBehaviour
                 return _wholeSpeed;
             _wholeSpeed -= 1;
         }
- 
-        foreach(int key in _lineDict.Keys)
+
+        foreach (int key in _lineDict.Keys)
         {
             _lineDict[key].GetComponent<PipeCreator>().speed = _wholeSpeed;
         }
 
-        return _wholeSpeed; 
+        return _wholeSpeed;
     }
 
     public void SetPipeColor(string hexColor)
@@ -124,12 +125,12 @@ public class FactoryManager : MonoBehaviour
 
     public void SetQuality(int quality)
     {
-        if(quality == 0)
+        if (quality == 0)
         {
             ppVolume.SetActive(false);
             QualitySettings.shadows = ShadowQuality.Disable;
         }
-        else if(quality == 1)
+        else if (quality == 1)
         {
             ppVolume.SetActive(true);
             QualitySettings.shadows = ShadowQuality.All;
@@ -138,9 +139,29 @@ public class FactoryManager : MonoBehaviour
 
     public void SetPipeCountLimit(int limit)
     {
-        foreach(int key in _lineDict.Keys)
+        foreach (int key in _lineDict.Keys)
         {
             _lineDict[key].GetComponent<PipeCreator>().pipeCountLimit = limit;
         }
+    }
+
+    public void SetErrorGeneratingTime(string query)
+    {
+        string[] values = query.Split(' ');
+
+        foreach (int key in _lineDict.Keys)
+        {
+            _lineDict[key].GetComponent<AlarmController>()
+                .GetSensorDataManager()
+                .GetErrorGenerator()
+                .ChangeErrorGeneratingTime(Convert.ToInt32(values[0]), Convert.ToInt32(values[1]), Convert.ToInt32(values[2]));
+        }
+    }
+
+    public void SetPhotoSlidingTime(string query)
+    {
+        string[] values = query.Split(' ');
+        
+        infoPanel.ChangePhotoSlidingTime(Convert.ToSingle(values[0]), Convert.ToSingle(values[1]));
     }
 }

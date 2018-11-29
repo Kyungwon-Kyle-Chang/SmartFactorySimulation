@@ -16,21 +16,20 @@ public class Alarm : MonoBehaviour, IPointerClickHandler
     private MachineStatus _status;
     private bool _isWorking;
 
-    private CameraFocusController _focusController;
-    private InfoPanel _infoPanel;
+    
     private Material[] _cachedMaterials;
     private Coroutine _coroutine;
     private Color _lightOff, _lightOn;
     private Color _baseColor;
-    
+
+    public delegate IEnumerator CoroutineDelegate(int machineNum);
+    private CoroutineDelegate _onClickCoroutine;
+
     [DllImport("__Internal")]
     private static extern void MachineStatusClickEvent(int machineNum, int lineNum, int status);
     //======================================================================================
     private void Awake()
     {
-        _focusController = FindObjectOfType<CameraFocusController>();
-        _infoPanel = FindObjectOfType<CanvasManager>().infoPanel;
-
         _cachedMaterials = new Material[3];
         _cachedMaterials[0] = top.GetComponent<MeshRenderer>().material;
         _cachedMaterials[1] = mid.GetComponent<MeshRenderer>().material;
@@ -44,6 +43,11 @@ public class Alarm : MonoBehaviour, IPointerClickHandler
     {
         _machineNum = machineNum;
         _lineNum = lineNum;
+    }
+
+    public void SetOnClickEvent(CoroutineDelegate func)
+    {
+        _onClickCoroutine = func;
     }
 
     public void StartEmission()
@@ -94,7 +98,7 @@ public class Alarm : MonoBehaviour, IPointerClickHandler
         MachineStatusClickEvent(_machineNum, _lineNum, (int)_status);
 #endif
 
-        StartCoroutine(OnClickCoroutine());
+        StartCoroutine(_onClickCoroutine(_machineNum));
     }
     //======================================================================================
     private IEnumerator EmissionCoroutine()
@@ -134,11 +138,5 @@ public class Alarm : MonoBehaviour, IPointerClickHandler
             }
             yield return null;
         }
-    }
-
-    private IEnumerator OnClickCoroutine()
-    {
-        yield return StartCoroutine(_focusController.SetCameraFocused(transform));
-        StartCoroutine(_infoPanel.OpenPanel());
     }
 }

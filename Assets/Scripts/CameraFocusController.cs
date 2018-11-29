@@ -26,7 +26,7 @@ public class CameraFocusController : MonoBehaviour {
         {
             cameraObject.transform.position = Vector3.Lerp(startPos, position, (float)(i + 1) / fps);
             cameraObject.transform.rotation = Quaternion.Lerp(startRot, rotation, (float)(i + 1) / fps);
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
     }
 }

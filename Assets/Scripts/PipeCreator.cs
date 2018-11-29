@@ -47,7 +47,8 @@ public class PipeCreator : MonoBehaviour
         {
             if(_pipeQueue.Count > pipeCountLimit)
             {
-                DestroyEarlyCreatedPipe();
+                //DestroyEarlyCreatedPipe();
+                DestroyAllPipes();
             }
 
             GameObject pipe = CreatePipe();
@@ -71,7 +72,6 @@ public class PipeCreator : MonoBehaviour
 
         Pipe pipeComp = newPipe.GetComponent<Pipe>();
         pipeComp.SetColor(pipeColor);
-        _pipeQueue.Enqueue(pipeComp);
 
         return newPipe;
     }
@@ -88,10 +88,20 @@ public class PipeCreator : MonoBehaviour
         rb.useGravity = true;
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         rb.AddForce(new Vector3(0.2f, 0, 0), ForceMode.Impulse);
+
+        _pipeQueue.Enqueue(pipe.GetComponent<Pipe>());
     }
 
     private void DestroyEarlyCreatedPipe()
     {
         Destroy(_pipeQueue.Dequeue().gameObject);
+    }
+
+    private void DestroyAllPipes()
+    {
+        while(_pipeQueue.Count > 0)
+        {
+            DestroyEarlyCreatedPipe();
+        }
     }
 }
